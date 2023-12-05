@@ -1,0 +1,33 @@
+{{ form_start(form, {'attr': {'class': 'custom-form'}}) }}
+    <div class="form-group">
+        {{ form_label(form.modele) }}
+        {{ form_widget(form.modele, {'attr': {'class': 'form-control', 'style': 'width: 200px;'}}) }}
+        {{ form_errors(form.modele) }}
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.etat) }}
+        {{ form_widget(form.etat, {'attr': {'class': 'form-control', 'style': 'width: 150px;'}}) }}
+        {{ form_errors(form.etat) }}
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.prix) }}
+        {{ form_widget(form.prix, {'attr': {'class': 'form-control', 'style': 'width: 100px;'}}) }}
+        {{ form_errors(form.prix) }}
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.image) }}
+        {{ form_widget(form.image, {'attr': {'class': 'form-control', 'style': 'width: 200px;'}}) }}
+        {{ form_errors(form.image) }}
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.station) }}
+        {{ form_widget(form.station, {'attr': {'class': 'form-control', 'style': 'width: 150px;'}}) }}
+        {{ form_errors(form.station) }}
+    </div>
+
+    <button class="btn btn-primary" style="margin-top: 10px;">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}
